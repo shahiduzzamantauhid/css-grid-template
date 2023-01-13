@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+
+/* Path: style.css */
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: "leftbox middlebox rightbox";
+    grid-gap: 1rem;
+}
+.box1{
+    grid-area: leftbox;
+    background-color: bisque;
+    width: 33%;
+    height: 300px;
+}
+.box2{
+    grid-area: middlebox;
+    background-color: bisque;
+    width: 33%;
+    height: 300px;
+}
+.box3{
+    grid-area: rightbox;
+    background-color: bisque;
+    width: 33%;
+    height: 300px;
+}
